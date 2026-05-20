@@ -38,8 +38,11 @@ class Game:
         self.final_result()
 
     def playround(self):
+        print(f'--- Round {self.rounds} ---')   
         human_choice = self.player1.move()
         computer_choice = self.player2.move()
+        print(f"Computer chose: {computer_choice}")
+        print(f"User chose: {human_choice}")
         outcome = self.OUTCOMES[(human_choice, computer_choice)]
         self.round_result(outcome)
 
