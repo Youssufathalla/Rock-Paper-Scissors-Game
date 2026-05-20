@@ -60,6 +60,7 @@ class Game:
             print('COMPUTER WINS THE GAME!!')
         else:
             print('THE GAME IS A DRAW!!')
+        exit(1)
            
 
 
