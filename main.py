@@ -14,7 +14,7 @@ class User(Player):
     def __init__(self, score):
         super().__init__(score)
     def move(self):
-        available_choices = ['r', 'p', 's']
+        available_choices = ['r', 'p', 's'] 
         choice = input("Rock, paper or scissors [r/p/s]? ").lower()
         while choice not in available_choices:
             choice = input("Invalid choice. Please enter 'r', 'p', or 's'.")
