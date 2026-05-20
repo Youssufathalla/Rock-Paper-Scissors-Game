@@ -34,11 +34,11 @@ class Game:
 
     def play(self):
         for i in range(self.rounds):
+            print(f'--- Round {i + 1} ---')   
             self.playround()
         self.final_result()
 
     def playround(self):
-        print(f'--- Round {self.rounds} ---')   
         human_choice = self.player1.move()
         computer_choice = self.player2.move()
         print(f"Computer chose: {computer_choice}")
